@@ -1,0 +1,16 @@
+.container{
+    width: 350px;
+    margin: auto;
+    background-color: lemonchiffon;
+    padding: 15px;
+    height: 70px;
+    border: 1px solid black;
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+input,button{
+    margin-right: 3px;
+}

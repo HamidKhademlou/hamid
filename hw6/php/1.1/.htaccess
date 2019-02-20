@@ -1,0 +1,12 @@
+Options +FollowSymLinks +ExecCGI
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+    # Run everything through index.php
+    RewriteCond %{REQUEST_FILENAME} !(\.png|\.jpg|\.gif|\.jpeg|\.bmp|\.css|\.js)$
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?request=$1 [L,QSA]
+</IfModule>

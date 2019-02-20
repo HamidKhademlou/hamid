@@ -1,0 +1,24 @@
+/* body{
+    background-color: red;
+} */
+
+@media only screen and (max-width:600px){
+    body{
+        background-color: red;
+    }
+}
+@media only screen and (min-width:600px){
+    body{
+        background-color: blue;
+    }
+}
+@media only screen and (min-width:800px){
+    body{
+        background-color: green;
+    }
+}
+@media only screen and (min-width:1000px){
+    body{
+        background-color: black;
+    }
+}

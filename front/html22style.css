@@ -1,0 +1,85 @@
+#parent{
+background-color: black;
+width: 550px;
+height: 600px;
+padding: 5px;
+}
+#div1{
+    width: 100%;
+    float: left;
+}
+#d11{
+    background-color: wheat;
+    margin: 5px 0px 0px 5px;
+    width: 100px;
+    height: 150px;
+}
+#d12{
+    background-color: wheat;
+    width: 100px;
+    margin: 20px 0px 0px 0px;
+    height: 180px;
+}
+#d13{
+    background-color: blue;
+    margin: 22px 0px 0px 0px;
+    height: 220px;
+}
+#d2{
+    height: 352px;
+    width: 68%;
+    background-color: red;
+    float: left;
+    margin: 5px 0px 0px 10px;
+}
+#d3{
+    height: 217px;
+    width: 58%;
+    background-color: wheat;
+    float: left;
+    margin: 5px 0px 0px 0px;
+}
+.a:link
+{
+text-decoration: none;
+padding: 30px;
+background-color: violet;
+border-radius: 5px;
+font-size: 20px;
+}
+.a:visited
+{
+cursor: text;
+background-color: green;
+}
+.a:hover
+{
+background-color: red;
+}
+.a:active
+{
+background-color: yellow;
+}
+ul{
+    position: fixed;
+    list-style-type:circle;
+    margin: 20;
+    padding: 20;   
+    z-index: 1;
+}
+#fixed{
+    position: relative;
+    background-color: aqua;
+    width: 700px;
+    height: 700px;
+    top:0;
+    right:0;
+}
+#absolute{
+    position: absolute;
+    background-color: red;
+    top:50px;
+    right:200px;
+    width: 20px;
+    height: 20px;
+}

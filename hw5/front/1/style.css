@@ -1,0 +1,41 @@
+body{
+    direction: rtl;
+    background-color: blanchedalmond;
+    background-image: url('1.jpg');
+    background-size: cover;
+}
+.a{
+    border: 1px groove black;
+}
+@media(max-width: 2000px){
+    .container{
+    }
+
+}
+.oppac{
+    opacity: 0.9;
+}
+.opp{
+    color: white;
+    font-size: 20px;
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+h3{
+    color: white;
+    opacity: 1;
+}
+.nonshow{
+    /* display: none; */
+}
+.active:focus{
+    background-color:red!important;
+    outline-color: white;
+}
+.active:focus + .actived{
+    display: block;
+    border-top: none;
+    top: 0px;
+    height: 300px;
+}

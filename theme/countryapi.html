@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>countries</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <style></style>
+</head>
+
+<body>
+    <select id="locality-dropdown" class="m-2" name="locality"></select>
+
+    <div class="d-flex flex-column">
+        <div style="height: 300px; width: 100%" class="d-flex flex-row justify-content-between mt-4">
+            <div id="about_country" class="bg-secondary text-warning text-center" style="width: 500px"></div>
+            <div id="call_country" class="bg-warning text-center" style="font-size: 200px; width: 500px"></div>
+            <div id="flag_country" class="" style="width: 500px"></div>
+        </div>
+        <div style="height: 300px; width: 100%" class="d-flex flex-row justify-content-between mt-1">
+            <div id="weather_country" style="background-color: teal;width: 500px" class=""></div>
+            <div id="map_country" style="background-color: green;width: 1010px" class=""></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "https://restcountries.eu/rest/v2",
+                success: function (data) {
+                    let dropdown = $('#locality-dropdown');
+                    // dropdown.empty();
+                    dropdown.append('<option selected="true" disabled>Choose Country</option>');
+                    dropdown.prop('selectedIndex', 0);
+                    $.each(data, function (key, entry) {
+                        dropdown.append($('<option>"' + entry.name + '"</option>').attr({
+                                'value': key
+                            })
+                            .text(entry.name));
+                    })
+                    $("#locality-dropdown").change(function () {
+                        var mycountry = data[this.value];
+                        $("#about_country").html(mycountry.name +
+                        "<br>Native Name: "+ mycountry.nativeName +
+                        "<br>Capital: "    + mycountry.capital + 
+                        "<br>Region: "     + mycountry.region +
+                        "<br>Population: " + mycountry.population +
+                        "<br>Languages: "  + mycountry.languages[0].name + 
+                        "<br>TimeZones: "  + mycountry.timezones);
+
+                        $("#call_country").html(mycountry.callingCodes);
+                        $("#flag_country").html('<img style="height:100%; width: 100%" src="' + mycountry.flag + '">');
+                    });
+                    // console.log(data);
+                    console.log(data[0]);
+                }
+            }, );
+        })
+    </script>
+</body>
+
+</html>

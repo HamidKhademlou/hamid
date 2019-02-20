@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav class="blue-grey">
+        <div class="container ">
+            <div class="nav-wrapper ">
+                <a href="#" class="brand-logo center">Company</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li class="col s2"><a href="badges.html">products</a></li>
+                    <li><a href="collapsible.html">services</a></li>
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="" class="btn pulse waves-effect red btn-large">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row ">
+            <div class="row ">
+                <div class="input-field col s6 offset-s3 ">
+                    <input id="username" type="text"  class="">
+                    <label for="username">username</label>
+                    <span id="usernamealert" class="helper-text" data-error="this username is chosen before"
+                        data-success="right"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6 offset-s3">
+                    <input id="password" type="password">
+                    <label for="password">Password</label>
+                    <span id="passwordalert" class="helper-text"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6 offset-s3">
+                    <input id="confirm" type="password">
+                    <label for="confirm">confirm Password</label>
+                    <span id="confirmalert" class="helper-text">confirm your password</span>
+                </div>
+            </div>
+            <div class="row center-align">
+                <button onclick="validateForm()" class=" btn  red">submit</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="hw82.js"></script>
+</body>
+
+</html>

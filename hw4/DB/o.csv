@@ -1,0 +1,23 @@
+firstName;lastName;boss_name;boss_family
+Mary;Patterson;Diane;Murphy
+Jeff;Firrelli;Diane;Murphy
+William;Patterson;Mary;Patterson
+Gerard;Bondur;Mary;Patterson
+Anthony;Bow;Mary;Patterson
+Leslie;Jennings;Anthony;Bow
+Leslie;Thompson;Anthony;Bow
+Julie;Firrelli;Anthony;Bow
+Steve;Patterson;Anthony;Bow
+"Foon Yue";Tseng;Anthony;Bow
+George;Vanauf;Anthony;Bow
+Loui;Bondur;Gerard;Bondur
+Gerard;Hernandez;Gerard;Bondur
+Pamela;Castillo;Gerard;Bondur
+Larry;Bott;Gerard;Bondur
+Barry;Jones;Gerard;Bondur
+Andy;Fixter;William;Patterson
+Peter;Marsh;William;Patterson
+Tom;King;William;Patterson
+Mami;Nishi;Mary;Patterson
+Yoshimi;Kato;Mami;Nishi
+Martin;Gerard;Gerard;Bondur

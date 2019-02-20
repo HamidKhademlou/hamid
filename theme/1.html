@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    header,
+    nav,
+    section,
+    article,
+    footer,
+    aside {
+      border: 1px solid rgb(5, 5, 5);
+      margin: 5px;
+      padding: 10px;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 5px;
+    }
+  </style>
+  <title>theme1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+
+  <!-- materialize -->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+  <header class="center-align teal lighten-2">
+    <h2>MATERIALIZE</h2>
+  </header>
+  <div class="divider"></div>
+
+  <nav class="teal darken-1 valign-wrapper nav-wrapper grey-text text-darken-4 hoverable">
+    <!-- <a href="#" class="col s3 brand-logo">Logo</a> -->
+    <ul>
+      <li><a href="#">Components</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </nav>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+  </ul>
+
+  <div class="divider"></div>
+  <div class="row">
+    <!----------------------------sidebar---------------------->
+    <div class="col s12 m4 l3">
+      <aside>
+        <ul class="collection">
+          <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">Title</span>
+            <p>First Line<br>
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+          </li>
+          <li class="collection-item avatar">
+            <i class="material-icons circle">folder</i>
+            <span class="title">Title</span>
+            <p>First Line <br>
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+          </li>
+          <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">Title</span>
+            <p>First Line<br>
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+          </li>
+          <li class="collection-item avatar">
+            <i class="material-icons circle red">play_arrow</i>
+            <span class="title">Title</span>
+            <p>First Line<br>
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+          </li>
+        </ul>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+        </ul>
+      </aside>
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-purple btn modal-trigger col s12" href="#modal1">Your welcome</a>
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>HI</h4>
+          <p>Your welcome to my site</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">thanks</a>
+        </div>
+      </div>
+    </div>
+    <!-------------------------- main ----------------------------->
+    <div class="col s12 m8 l9">
+      <article class="row">
+        <h2>
+          <blockquote>Famous Fighters</blockquote>
+        </h2>
+        <div class="divider"></div>
+        <div class="row hoverable">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img class="z-depth-4 responsive-img" src="pic1/2611.jpg">
+                <span class="card-title">
+                  <blockquote>F14 tomcat my sweetheart</blockquote>
+                </span>
+                <a class="btn-floating halfway-fab waves-effect waves-purple red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because
+                  I require little markup to use effectively.</p>
+              </div>
+              <button class="btn btn-small waves-effect waves-purple" type="submit" name="action">like
+                <i class="material-icons right">thumb_up</i>
+              </button>
+              <div class="chip">USA</div><div class="chip">IRAN</div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img class="z-depth-4 responsive-img" src="pic1/2609.jpg">
+                <span class="card-title">
+                  <blockquote>F14 tomcat my sweetheart</blockquote>
+                </span>
+                <a class="btn-floating halfway-fab waves-effect waves-purple red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because
+                  I require little markup to use effectively.</p>
+              </div>
+              <button class="btn btn-small waves-effect waves-purple" type="submit" name="action">like
+                <i class="material-icons right">thumb_up</i>
+              </button>
+              <div class="chip">USA</div><div class="chip">IRAN</div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="parallax-container" style="height:25rem">
+          <div class="parallax"><img src="pic1/rafale-5.jpg"></div>
+        </div>
+        <div class="divider"></div>
+        <div class="row hoverable">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img class="z-depth-4 responsive-img" src="pic1/su30-1.jpg">
+                <span class="card-title">
+                  <blockquote>SU. sukhoi 30</blockquote>
+                </span>
+                <a class="btn-floating halfway-fab waves-effect waves-purple red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <button class="btn btn-small waves-effect waves-purple" type="submit" name="action">like
+                <i class="material-icons right">thumb_up</i>
+              </button>
+              <div class="chip">Russia</div><div class="chip">IRAN</div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img class="z-depth-4 responsive-img" src="pic1/su30-2.jpg">
+                <span class="card-title">
+                  <blockquote>SU. sukhoi 30</blockquote>
+                </span>
+                <a class="btn-floating halfway-fab waves-effect waves-purple red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because
+                  I require little markup to use effectively.I am good at containing small bits of information. I am
+                  convenient because</p>
+              </div>
+              <button class="btn btn-small waves-effect waves-purple" type="submit" name="action">like
+                <i class="material-icons right">thumb_up</i>
+              </button>
+              <div class="chip">Russia</div><div class="chip">IRAN</div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="parallax-container" style="height:22rem">
+          <div class="parallax"><img src="pic1/2088117.jpg"></div>
+        </div>
+        <div class="divider"></div>
+        <div class="row hoverable">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img class="z-depth-4 responsive-img" src="pic1/sukhoi_s37_berkut_l2.jpg">
+                <span class="card-title">
+                  <blockquote>sukhoi 37_berkut (Golden Eagle)</blockquote>
+                </span>
+                <a class="btn-floating halfway-fab waves-effect waves-purple red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because
+                  I require little markup to use effectively.</p>
+              </div>
+              <button class="btn btn-small waves-effect waves-purple" type="submit" name="action">like
+                <i class="material-icons right">thumb_up</i>
+              </button>
+              <div class="chip">test project</div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img class="z-depth-4 responsive-img" src="pic1/su47.jpg">
+                <span class="card-title">
+                  <blockquote>sukhoi 37_berkut (Golden Eagle)</blockquote>
+                </span>
+                <a class="btn-floating halfway-fab waves-effect waves-purple red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because
+                  I require little markup to use effectively.I am good at containing small bits of information. I am
+                  convenient because
+                  I require little markup to use effectively.</p>
+              </div>
+              <button class="btn btn-small waves-effect waves-purple" type="submit" name="action">like
+                <i class="material-icons right">thumb_up</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="fixed-action-btn ">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+  <div class="divider"></div>
+  <!-- <footer class="teal lighten-2">
+    <p class="center-align">&copy; 2018. my first flex & materilize theme All rights reserved.</p>
+  </footer> -->
+  <footer class="page-footer teal lighten-2">
+    <div class="container ">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">my theme by using of materilize.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script> -->
+  <script src="jquery-3.3.1.min.js"></script>
+  <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+  <!-- materilize -->
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="1.js"></script>
+</body>
+
+</html>

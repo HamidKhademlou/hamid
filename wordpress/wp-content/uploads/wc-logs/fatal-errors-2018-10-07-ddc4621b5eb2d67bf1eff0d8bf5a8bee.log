@@ -1,0 +1,68 @@
+2018-10-07T19:04:15+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\hamid\wordpress\wp-content\themes\mytheme\index.php:6
+Stack trace:
+#0 C:\xampp\htdocs\hamid\wordpress\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\hamid\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hamid\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2018-10-07T20:10:08+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-10-08T00:21:43+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function register_nav_menu(), 1 passed in C:\xampp\htdocs\hamid\wordpress\wp-content\themes\mytheme\functions.php on line 14 and exactly 2 expected in C:\xampp\htdocs\hamid\wordpress\wp-includes\nav-menu.php:126
+Stack trace:
+#0 C:\xampp\htdocs\hamid\wordpress\wp-content\themes\mytheme\functions.php(14): register_nav_menu(Array)
+#1 C:\xampp\htdocs\hamid\wordpress\wp-includes\class-wp-hook.php(286): register_my_menu('')
+#2 C:\xampp\htdocs\hamid\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\hamid\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\hamid\wordpress\wp-settings.php(450): do_action('init')
+#5 C:\xampp\htdocs\hamid\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\hamid\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\hamid\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+
+2018-10-08T00:21:55+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function register_nav_menu(), 1 passed in C:\xampp\htdocs\hamid\wordpress\wp-content\themes\mytheme\functions.php on line 14 and exactly 2 expected in C:\xampp\htdocs\hamid\wordpress\wp-includes\nav-menu.php:126
+Stack trace:
+#0 C:\xampp\htdocs\hamid\wordpress\wp-content\themes\mytheme\functions.php(14): register_nav_menu(Array)
+#1 C:\xampp\htdocs\hamid\wordpress\wp-includes\class-wp-hook.php(286): register_my_menu('')
+#2 C:\xampp\htdocs\hamid\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\hamid\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\hamid\wordpress\wp-settings.php(450): do_action('init')
+#5 C:\xampp\htdocs\hamid\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\hamid\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\hamid\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#8 C
+
+2018-10-08T00:23:39+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function register_nav_menu(), 1 passed in C:\xampp\htdocs\hamid\wordpress\wp-content\themes\mytheme\functions.php on line 14 and exactly 2 expected in C:\xampp\htdocs\hamid\wordpress\wp-includes\nav-menu.php:126
+Stack trace:
+#0 C:\xampp\htdocs\hamid\wordpress\wp-content\themes\mytheme\functions.php(14): register_nav_menu(Array)
+#1 C:\xampp\htdocs\hamid\wordpress\wp-includes\class-wp-hook.php(286): register_my_menu('')
+#2 C:\xampp\htdocs\hamid\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\hamid\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\hamid\wordpress\wp-settings.php(450): do_action('init')
+#5 C:\xampp\htdocs\hamid\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\hamid\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\hamid\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#8 C
+
+2018-10-08T00:23:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function register_nav_menu(), 1 passed in C:\xampp\htdocs\hamid\wordpress\wp-content\themes\mytheme\functions.php on line 14 and exactly 2 expected in C:\xampp\htdocs\hamid\wordpress\wp-includes\nav-menu.php:126
+Stack trace:
+#0 C:\xampp\htdocs\hamid\wordpress\wp-content\themes\mytheme\functions.php(14): register_nav_menu(Array)
+#1 C:\xampp\htdocs\hamid\wordpress\wp-includes\class-wp-hook.php(286): register_my_menu('')
+#2 C:\xampp\htdocs\hamid\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\hamid\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\hamid\wordpress\wp-settings.php(450): do_action('init')
+#5 C:\xampp\htdocs\hamid\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\hamid\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\hamid\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+
+2018-10-08T00:48:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-10-08T00:48:56+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-10-08T00:49:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-10-08T00:49:30+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-10-08T00:53:26+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-10-08T00:53:27+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+

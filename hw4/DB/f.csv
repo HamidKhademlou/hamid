@@ -1,0 +1,8 @@
+city;COUNT(customerNumber)
+"San Francisco";12
+Boston;12
+NYC;15
+Paris;29
+Tokyo;5
+Sydney;10
+London;17

@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <style>
+        /* .loader {
+            border: 16px solid #f3f3f3;
+            /* Light grey */
+            border-top: 16px solid #3498db;
+            /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row jumbotron" style="overflow:auto;">
+            <button id="api" type="button" class="btn btn-success col">APi</button>
+            <div id="r11" class="col mx-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" id="r1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="r1">check once</label>
+            </div>
+            <div id="r22" class=" col custom-control custom-radio custom-control-inline">
+                <input type="radio" id="r2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="r2">check every 3s</label>
+            </div>
+            <div class="col justify-content-center">
+                <img class="loader" style="display:none" src="loader.gif">
+                <div class="data d-inline-block"></div>
+            </div>
+            <!-- <div class="table2 col-6 d-inline-block text-center"></div>
+                    <div class="loader col-6" style="display:none"></div> -->
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $("#api").click(function () {
+            var myVar = setInterval(myTimer, 3000);
+
+            function myTimer() {
+                $.ajax({
+                    url: 'http://worldclockapi.com/api/json/utc/now',
+                    success: function (data) {
+                        $(".data").html(data.currentDateTime);
+                        if ($('#r1').is(":checked")) {
+                            setTimeout(myTimer)
+                        }
+                    },
+                    type: 'GET'
+                });
+            }
+        });
+
+        $(document).ajaxStart(function () {
+            $(".loader").css("display", "inline");
+        });
+
+        $(document).ajaxComplete(function () {
+            $(".loader").css("display", "none");
+        });
+    </script>
+</body>
+
+</html>

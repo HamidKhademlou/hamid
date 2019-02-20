@@ -1,0 +1,66 @@
+body{
+    background: url(b1.jpg) no-repeat;
+    background-size: cover;
+}
+
+table{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+th{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+.center{
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    margin: 50px auto 0;
+    padding: 10px;
+    background-color: rgba(10,10,10,0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.form{
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.width1{
+    width: 100px;
+}
+
+.viewForm{
+    background: none;
+    border: 0;
+}
+
+.editForm{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.error{
+    text-align: center !important;
+    color: red !important;
+    font-weight: bold !important;
+}
+

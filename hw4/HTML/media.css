@@ -1,0 +1,212 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.col-1 { width: 8.33%;}
+.col-2 { width:16.66% ;}
+.col-3 { width:25%;}
+.col-4 { width:33.33%;}
+.col-5 { width: 41.66%;}
+.col-6 { width: 50%;}
+.col-7 { width: 58.33%;}
+.col-8 { width:66.66%;}
+.col-9 { width:75%;}
+.col-10 { width:83.33%;}
+.col-11 { width:91.66%;}
+.col-12 { width:100%;}
+.h{
+    height: 170px;
+}
+.h1{
+    height: 200px;
+}
+.blue{
+    background-color: blue;
+}
+.gray{
+    background-color: rgb(203, 203, 203);
+}
+.green{
+    background-color:rgb(123, 248, 123);
+}
+.orange{
+    background-color: rgb(255, 196, 85);
+}
+.red{
+    background-color: rgb(255, 68, 68);
+}
+.white{
+    color:white;
+}
+.float{
+    float: left;
+}
+.padding{
+    padding: 10px;
+}
+.align{
+    text-align: center;
+}
+#head{
+    padding:50px 0; 
+    font-size: 40px;
+}
+.title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.text{
+    padding: 30px 40px;
+}
+.colored{
+    padding:50px 50px 80px 50px ;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:1000px){
+    .col-a-1 { width: 8.33%;}
+    .col-a-2 { width:16.66% ;}
+    .col-a-3 { width:25%;}
+    .col-a-4 { width:33.33%;}
+    .col-a-5 { width: 41.66%;}
+    .col-a-6 { width: 50%;}
+    .col-a-7 { width: 58.33%;}
+    .col-a-8 { width:66.66%;}
+    .col-a-9 { width:75%;}
+    .col-a-10 { width:83.33%;}
+    .col-a-11 { width:91.66%;}
+    .col-a-12 { width:100%;}
+    .h{
+        height: 150px;
+    }
+    .h1{
+        height: 200px;
+        
+    }
+    .blue{
+        background-color: blue;
+        color: white;
+    }
+    .gray{
+        background-color: rgb(203, 203, 203);
+    }
+    .green{
+        background-color:rgb(123, 248, 123);
+    }
+    .orange{
+        background-color: rgb(255, 196, 85);
+    }
+    .red{
+        background-color: rgb(255, 68, 68);
+    }
+    .float{
+        float: left;
+    }
+    .padding{
+        padding: 10px;
+    }
+    .align{
+        
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width:800px){
+    .col-b-1 { width: 8.33%;}
+    .col-b-2 { width:16.66% ;}
+    .col-b-3 { width:25%;}
+    .col-b-4 { width:33.33%;}
+    .col-b-5 { width: 41.66%;}
+    .col-b-6 { width: 50%;}
+    .col-b-7 { width: 58.33%;}
+    .col-b-8 { width:66.66%;}
+    .col-b-9 { width:75%;}
+    .col-b-10 { width:83.33%;}
+    .col-b-11 { width:91.66%;}
+    .col-b-12 { width:100%;}
+    .h{
+        height: 150px;
+    }
+    .h1{
+        height: 200px;
+    }
+    .blue{
+        background-color: blue;
+        color: white;
+    }
+    .gray{
+        background-color: rgb(203, 203, 203);
+    }
+    .green{
+        background-color:rgb(123, 248, 123);
+    }
+    .orange{
+        background-color: rgb(255, 196, 85);
+    }
+    .red{
+        background-color: rgb(255, 68, 68);
+    }
+    .float{
+        float: left;
+    }
+    .padding{
+        padding: 10px;
+    }
+    .align{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:600px){
+    .col-c-1 { width: 8.33%;}
+    .col-c-2 { width:16.66% ;}
+    .col-c-3 { width:25%;}
+    .col-c-4 { width:33.33%;}
+    .col-c-5 { width: 41.66%;}
+    .col-c-6 { width: 50%;}
+    .col-c-7 { width: 58.33%;}
+    .col-c-8 { width:66.66%;}
+    .col-c-9 { width:75%;}
+    .col-c-10 { width:83.33%;}
+    .col-c-11 { width:91.66%;}
+    .col-c-12 { width:100%;}
+    .h{
+        height: 150px;
+    }
+    .h1{
+        height: 200px;
+    }
+    .blue{
+        background-color: blue;
+        color: white;
+    }
+    .gray{
+        background-color: rgb(203, 203, 203);
+    }
+    .green{
+        background-color:rgb(123, 248, 123);
+    }
+    .orange{
+        background-color: rgb(255, 196, 85);
+    }
+    .red{
+        background-color: rgb(255, 68, 68);
+    }
+    .float{
+        float: left;
+    }
+    .padding{
+        padding: 10px;
+    }
+    .display{
+        display: none;
+    }
+    .align{
+        text-align: center;
+    }
+}

@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'BYekan';
+    src: url(fonts/BYekan.eot) format('eot'),
+        url(fonts/BYekan.woff) format('woff'),
+        url(fonts/BYekan.ttf) format('truetype');
+}
+
+body {
+    color: white;
+    font-family: 'BYekan';
+}
+
+.whole {
+    margin-left: 200px;
+    width: 1100px;
+    height: 1900px;
+}
+
+#up {
+    height: 550px;
+    background-image: url("1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+
+}
+
+.srchico {
+    cursor: pointer;
+    height: 16px;
+    align-items: flex-end;
+    vertical-align: middle;
+    margin-right: -10px;
+}
+
+input {
+    background-color: unset;
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.801);
+    padding: 0
+}
+
+#search {
+    font-size: 11px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: BYekan;
+    width: 155px;
+    text-align: right;
+    color: gray;
+    padding: 0px;
+    direction: rtl;
+    font-weight: lighter;
+}
+
+#top {
+    padding: 10px 10px 0 50px;
+    border-bottom: 1px solid gray;
+    display: block;
+}
+
+#sear {
+    display: inline-block;
+}
+
+#menu {
+    margin-left: 250px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+#log {
+    height: 40px;
+    width: 90px;
+}
+
+#logo {
+    vertical-align: bottom;
+    height: 40px;
+    width: 90px;
+    display: inline-block;
+}
+
+.btn {
+    color: rgb(206, 206, 206);
+    font-size: 15px;
+    margin: 0px 20px;
+}
+
+#sep {
+    margin-right: 50px;
+    display: inline-block;
+}
+
+#content {
+    margin-top: 150px;
+    text-align: center;
+    display: block;
+}
+
+#mosbat {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mosb {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.mosb1 {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 12px;
+
+}
+
+#know {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(5, 202, 202);
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+
+#b1,
+#b2,
+#b3 {
+    height: 7px;
+    width: 7px;
+    border-radius: 5px;
+    margin: 125px 0px 0 5px;
+    ;
+    display: inline-block;
+}
+
+#b1 {
+    background-color: gray;
+}
+
+#b2 {
+    background-color: white;
+}
+
+#b3 {
+    background-color: gray;
+}
+
+#down {
+    text-align: center;
+    display: block;
+}
+
+#aboutus {
+    height: 190px;
+    background-color: rgb(5, 202, 202);
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+#hamkar {
+    direction: rtl;
+    text-align: center;
+    padding: 10px 90px;
+    font-size: 15px;
+}
+
+#mosbati {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    margin-top: 0px;
+}
+
+#sub1 {
+    margin-left: 50px;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 17px;
+    height: 150px;
+    width: 260px;
+    padding: 0 20px 0 20px;
+    color: black;
+}
+
+#sub12 {
+    margin-left: 50px;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 17px;
+    height: 380px;
+    width: 260px;
+    padding: 0 20px 0 20px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 1px 2px 9px #888888;
+}
+
+p {
+    text-align: justify;
+}
+
+#hozekari {
+    height: 1150px;
+    background-color: rgb(247, 247, 247);
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+#image {
+    height: 120px;
+    width: 140px;
+}
+
+#mosbatin {
+    display: block;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    margin-top: 50px;
+}
+
+.logos {
+    margin-top: 50px;
+    height: 70px;
+    width: auto;
+}
+
+.arrow {
+    margin-top: 50px;
+    height: 30px;
+    width: auto;
+    vertical-align: 20px
+}
+
+#foot {
+    background-color: rgba(0, 0, 0);
+    height: 290px;
+    opacity: 0.8;
+    z-index: -1;
+
+}
+
+#onthe {
+    color: white;
+    background-image: url("usluge-half-1024x683.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 290px;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+#next {
+    z-index: 2;
+    opacity: 1;
+}
+
+#mosbatif {
+    display: block;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    color: white;
+}
+
+.mosb2 {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.ersal {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#know1 {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(5, 202, 202);
+    padding: 5px 40px;
+    border-radius: 15px;
+}
+
+.inp {
+    font-family: BYekan;
+    border: none;
+    text-align: right;
+    height: 30px;
+    width: 190px;
+}
+
+.salam {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px 0;
+    margin: 0px 10px;
+}
+
+.srchico1 {
+    cursor: pointer;
+    height: 16px;
+    align-items: flex-end;
+    vertical-align: middle;
+    padding-right: 3px;
+}
+
+#tool {
+    width: 250px;
+}
+
+#right {
+    float: right;
+}
+
+#left {
+    float: left;
+}
+
+#center {
+    display: inline-block;
+}
