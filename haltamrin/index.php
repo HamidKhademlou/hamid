@@ -1,11 +1,9 @@
 <?php
-
 include "class1.php";
 // $obj = new person();
 // echo "<br>";
 // $obj->firstName = "ali";
 // $obj->lastName = "alavi";
-// var_dump($obj);
 // echo "<br>";
 
 // $arr=['20','15','11', 10, 12];
@@ -48,5 +46,4 @@ $ans->mul();
 echo "<br>";
 $ans->div();
 echo "<br>";
-
 ?>

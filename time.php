@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<HTML>
 <?php
 // // date_default_timezone_set("Asia/Tehran");
 // echo date("Y/m/d h/i/sa", time());
@@ -34,16 +32,12 @@
 // $workingHours = (strtotime($end) - strtotime($start)) / 3600;
 // echo $interval->format("%H");
 
-
 $start = \DateTime::createFromFormat('d. m. Y', '22. 11. 1968');
 echo 'Start date: ' . $start->format('Y.m.d') . "\n";
-// create a copy of $start and add one month and 6 days
+
+// create a copy of $start and add one month and 7 days
 $end = clone $start;
-$end->add(new \DateInterval('P1M6D'));
+$end->add(new \DateInterval('P1M7D'));
 
 $diff = $end->diff($start);
-echo '<br>Difference: ' . $diff->format('%m month, %d days (total: %a days)') . "\n";
-// Difference: 1 month, 6 days (total: 37 days)
-?>
-</body>
-</html>
+echo '<br> Difference: ' . $diff->format('%m month, %d days (total: %a days)') . "\n";

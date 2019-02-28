@@ -8,21 +8,23 @@ class arr
         // foreach
         return $this->a;
     }
+
     public function setvalue($index, $value)
     {
         $this->a[$index] = $value;
         return $this->a;
     }
+
     public function view($index)
     {
         $l = count($this->a);
-        // var_dump($l);die;
         if ($index < $l) {
             return $this->a[$index];
         } else {
-            return -1;
+            return "array size is smaller than what you want";
         }
     }
+    
     public function sort()
     {
         $aa=(array)$this->a;

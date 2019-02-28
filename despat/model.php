@@ -2,9 +2,7 @@
 
 class Model
 {
-
     public $con = null;
-
     /**
      * conection to database construct function
      */
@@ -18,7 +16,6 @@ class Model
         } catch (PDOException $e) {
             // echo "Connection failed: " . $e->getMessage();
         }
-
         return $this->con;
     }
 
@@ -77,7 +74,6 @@ class Model
             // echo "Error: " . $e->getMessage();
         }
         $conn = null;
-
         if ($fetchall == true) {
             return $output;
         } else {
@@ -139,7 +135,6 @@ class Model
             // echo $sql . "<br>" . $e->getMessage();
             $job = false;
         }
-
         $conn = null;
         return $job;
     }

@@ -1,5 +1,5 @@
 <?php
-// class Person
+ // class Person
 // {
 //     public $firstName = "";
 //     public $lastName = "";
@@ -80,12 +80,20 @@
 
 class Calcoop implements Number
 {
-    // public $num = "";
+    public $num = "";
+    public $num1 = "";
+
+    public function __construct($var1)
+    {
+        $this->num1 = $var1;
+        echo "num1 = " . $this->num1;
+    }
+
     public function isint($input)
     {
         if (is_int($input)) {
             $this->num = $input;
-            echo $this->num;
+            echo "num = " . $this->num;
         } else {
             echo "this is not a numeric input!";
         }
@@ -94,16 +102,12 @@ class Calcoop implements Number
     {
         if (is_float($input)) {
             $this->num = $input;
-            echo $this->num;
+            echo "<br>num = " . $this->num;
         } else {
             echo "this is not a float input!";
         }
     }
-    public $num1 = "";
-    public function __construct($var1)
-    {
-        $this->num1 = $var1;
-    }
+    
     public function sum()
     {
         echo $this->num1 + $this->num;
@@ -121,6 +125,7 @@ class Calcoop implements Number
         echo $this->num1 / $this->num;
     }
 }
+
 interface Number
 {
     public function isint($var);
@@ -138,13 +143,10 @@ class dataFormater
     {
         $b[] = explode(':', $a);
         $y = strlen($b[0]);
-        for ($i = 1; $i <= $y; $i++) {
-        }
+        for ($i = 1; $i <= $y; $i++) { }
         $m = strlen($b[1]);
-        for ($i = 1; $i <= $m; $i++) {
-        }
+        for ($i = 1; $i <= $m; $i++) { }
         $d = strlen($b[2]);
-        for ($i = 1; $i <= $d; $i++) {
-        }
+        for ($i = 1; $i <= $d; $i++) { }
     }
 }
