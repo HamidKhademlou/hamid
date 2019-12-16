@@ -10,19 +10,19 @@ class session
         session_unset();
         session_destroy();
     }
-    public static function setSession($b, $c)
+    public static function setSession($name, $value)
     {
-        $_SESSION[$b] = $c;
+        $_SESSION[$name] = $value;
     }
-    public static function getSession($b)
+    public static function getSession($name)
     {
-        echo $_SESSION[$b];
+        echo $_SESSION[$name];
     }
 }
 session::sessionStart();
 ?>
 <?php
-session::setSession('name', 'hamisss');
-session::getSession('name');
+session::setSession('user', 'hamid');
+session::getSession('user');
 session::sessionDestroy();
 ?>

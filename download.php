@@ -12,4 +12,4 @@ header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
 header('Pragma: public');
 header('Content-Length: ' . $size);
 // readfile("ckeditor_4.10.0_full.zip");
-echo($file);
+echo ($file);

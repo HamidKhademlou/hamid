@@ -6,21 +6,22 @@ use ResponsiveMenu\Collections\OptionsCollection;
 class OptionsCollectionTest extends TestCase {
 
     private $options = [
+        'menu_theme' => false,
         'foo' => 'bar',
         'baz' => 'moo'
     ];
 
     public function testCreationFromConstructor() {
         $collection = new OptionsCollection($this->options);
-        $this->assertCount(2, $collection);
+        $this->assertCount(3, $collection);
     }
 
     public function testAddingOptions() {
         $collection = new OptionsCollection($this->options);
-        $this->assertCount(2, $collection);
+        $this->assertCount(3, $collection);
 
         $collection->add(['moon' => 'rise']);
-        $this->assertCount(3, $collection);
+        $this->assertCount(4, $collection);
     }
 
     public function testAccessViaArray() {
@@ -31,21 +32,21 @@ class OptionsCollectionTest extends TestCase {
 
     public function testRemoveViaArray() {
         $collection = new OptionsCollection($this->options);
-        $this->assertCount(2, $collection);
+        $this->assertCount(3, $collection);
 
         unset($collection['foo']);
 
-        $this->assertCount(1, $collection);
+        $this->assertCount(2, $collection);
         $this->assertNull($collection['foo']);
     }
 
     public function testSetViaArray() {
         $collection = new OptionsCollection($this->options);
-        $this->assertCount(2, $collection);
+        $this->assertCount(3, $collection);
 
         $collection['moon'] = 'rise';
 
-        $this->assertCount(3, $collection);
+        $this->assertCount(4, $collection);
         $this->assertEquals('rise', $collection['moon']);
     }
 

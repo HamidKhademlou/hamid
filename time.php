@@ -2,7 +2,7 @@
 // // date_default_timezone_set("Asia/Tehran");
 // echo date("Y/m/d h/i/sa", time());
 // echo "<br>";
-// echo time();//timestamp
+// echo time(); //timestamp
 // echo "<br>";
 // $a = mktime(9, 31, 30, 11, 12, 2015);
 // echo date("Y/m/d H/i/sa", $a);
@@ -33,11 +33,11 @@
 // echo $interval->format("%H");
 
 $start = \DateTime::createFromFormat('d. m. Y', '22. 11. 1968');
-echo 'Start date: ' . $start->format('Y.m.d') . "\n";
+echo 'Start date: ' . $start->format('Y/m/d, l');
 
 // create a copy of $start and add one month and 7 days
 $end = clone $start;
 $end->add(new \DateInterval('P1M7D'));
 
-$diff = $end->diff($start);
-echo '<br> Difference: ' . $diff->format('%m month, %d days (total: %a days)') . "\n";
+$difference = $end->diff($start);
+echo '<br> Difference: ' . $difference->format('%m month, %d days (total: %a days)');

@@ -58,24 +58,21 @@
     float: left;
 }
 
+#responsive-menu-admin #upgrade-bottom-banner a,
+#responsive-menu-admin #upgrade-banner-title a {
+    color: #ffffff;
+}
+
 #responsive-menu-admin #upgrade-banner {
     color: #fff;
     border-radius: 2px;
     text-align: center;
     margin: 0 auto 15px auto;
-    background-color: #0d2446;
-    background-repeat: no-repeat;
-    background-image: url('../../img/banner.jpg');
-    padding-top: 105px;
-    background-position: center top;
+    background-color: #15a4fa;
     max-width: 350px;
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
-}
-
-#responsive-menu-admin #upgrade-banner .button {
-    background: #fab719;
 }
 
 #responsive-menu-admin #upgrade-banner i {

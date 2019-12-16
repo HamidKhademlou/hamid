@@ -206,7 +206,7 @@ input[type="search"].search-field {
 	margin-left: auto;
 }
 
-.main-navigation .menu-item-has-children>a {
+.main-navigation .menu-item-has-children > a {
 	margin-right: auto;
 	margin-left: 56px;
 }
@@ -352,12 +352,12 @@ input[type="search"].search-field {
 }
 
 .page-links a,
-.page-links>span {
+.page-links > span {
 	margin-right: auto;
 	margin-left: 0.3076923077em;
 }
 
-.page-links>.page-links-title {
+.page-links > .page-links-title {
 	padding-right: 0;
 	padding-left: 0.6153846154em;
 }
@@ -375,7 +375,7 @@ body:not(.search-results) .entry-summary .alignleft {
  * 8.3 - Comments
  */
 
-.comment-list .children>li {
+.comment-list .children > li {
 	padding-right: 0.875em;
 	padding-left: 0;
 }
@@ -386,7 +386,7 @@ body:not(.search-results) .entry-summary .alignleft {
 	margin-left: 0.875em;
 }
 
-.bypostauthor>article .fn:after {
+.bypostauthor > article .fn:after {
 	left: auto;
 	right: 3px;
 }
@@ -471,27 +471,27 @@ body:not(.search-results) .entry-summary .alignleft {
 		margin-left: auto;
 	}
 
-	.entry-content li>ul,
-	.entry-summary li>ul,
-	.comment-content li>ul,
-	.entry-content blockquote>ul,
-	.entry-summary blockquote>ul,
-	.comment-content blockquote>ul {
+	.entry-content li > ul,
+	.entry-summary li > ul,
+	.comment-content li > ul,
+	.entry-content blockquote > ul,
+	.entry-summary blockquote > ul,
+	.comment-content blockquote > ul {
 		margin-right: 1.25em;
 		margin-left: auto;
 	}
 
-	.entry-content li>ol,
-	.entry-summary li>ol,
-	.comment-content li>ol,
-	.entry-content blockquote>ol,
-	.entry-summary blockquote>ol,
-	.comment-content blockquote>ol {
+	.entry-content li > ol,
+	.entry-summary li > ol,
+	.comment-content li > ol,
+	.entry-content blockquote > ol,
+	.entry-summary blockquote > ol,
+	.comment-content blockquote > ol {
 		margin-right: 1.5em;
 		margin-left: auto;
 	}
 
-	.comment-list .children>li {
+	.comment-list .children > li {
 		padding-right: 1.75em;
 		padding-left: 0;
 	}
@@ -502,14 +502,14 @@ body:not(.search-results) .entry-summary .alignleft {
 		padding-left: 23.0769%;
 	}
 
-	body:not(.search-results) .entry-summary li>ul,
-	body:not(.search-results) .entry-summary blockquote>ul {
+	body:not(.search-results) .entry-summary li > ul,
+	body:not(.search-results) .entry-summary blockquote > ul {
 		margin-right: 1.157894737em;
 		margin-left: auto;
 	}
 
-	body:not(.search-results) .entry-summary li>ol,
-	body:not(.search-results) .entry-summary blockquote>ol {
+	body:not(.search-results) .entry-summary li > ol,
+	body:not(.search-results) .entry-summary blockquote > ol {
 		margin-right: 1.473684211em;
 		margin-left: auto;
 	}
@@ -521,7 +521,7 @@ body:not(.search-results) .entry-summary .alignleft {
  */
 
 @media screen and (min-width: 56.875em) {
-	.main-navigation .primary-menu>li {
+	.main-navigation .primary-menu > li {
 		float: right;
 	}
 
@@ -541,35 +541,35 @@ body:not(.search-results) .entry-summary .alignleft {
 		right: auto;
 	}
 
-	.main-navigation li:hover>ul,
-	.main-navigation li.focus>ul {
+	.main-navigation li:hover > ul,
+	.main-navigation li.focus > ul {
 		left: 0;
 		right: auto;
 	}
 
-	.main-navigation ul ul li:hover>ul,
-	.main-navigation ul ul li.focus>ul {
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul {
 		left: 100%;
 		right: auto;
 	}
 
-	.main-navigation .menu-item-has-children>a {
+	.main-navigation .menu-item-has-children > a {
 		margin: 0;
 		padding-right: 0.875em;
 		padding-left: 2.25em;
 	}
 
-	.main-navigation .menu-item-has-children>a:after {
+	.main-navigation .menu-item-has-children > a:after {
 		left: 0.625em;
 		right: auto;
 	}
 
-	.main-navigation ul ul .menu-item-has-children>a {
+	.main-navigation ul ul .menu-item-has-children > a {
 		padding-right: 0.875em;
 		padding-left: 2.0625em;
 	}
 
-	.main-navigation ul ul .menu-item-has-children>a:after {
+	.main-navigation ul ul .menu-item-has-children > a:after {
 		left: 0.5625em;
 		right: auto;
 		top: 0.8125em;
@@ -677,15 +677,14 @@ body:not(.search-results) .entry-summary .alignleft {
 		float: left;
 	}
 
-	body:not(.search-results) article:not(.type-page) .entry-content>blockquote.alignleft.below-entry-meta {
+	body:not(.search-results) article:not(.type-page) .entry-content > blockquote.alignleft.below-entry-meta {
 		margin-right: 1.473684211em;
 		margin-left: 0;
 		width: -webkit-calc(50% - 0.736842105em);
-		width: calc(50% - 0.736842105em);
-		;
+		width: calc(50% - 0.736842105em);;
 	}
 
-	body:not(.search-results) article:not(.type-page) .entry-content>blockquote.alignright.below-entry-meta {
+	body:not(.search-results) article:not(.type-page) .entry-content > blockquote.alignright.below-entry-meta {
 		margin-right: -40%;
 		margin-left: 1.473684211em;
 		width: -webkit-calc(60% - 1.4736842105em);
@@ -720,15 +719,14 @@ body:not(.search-results) .entry-summary .alignleft {
  */
 
 @media screen and (min-width: 75em) {
-
-	body:not(.search-results) .entry-summary li>ul,
-	body:not(.search-results) .entry-summary blockquote>ul {
+	body:not(.search-results) .entry-summary li > ul,
+	body:not(.search-results) .entry-summary blockquote > ul {
 		margin-right: 0.956521739em;
 		margin-left: auto;
 	}
 
-	body:not(.search-results) .entry-summary li>ol,
-	body:not(.search-results) .entry-summary blockquote>ol {
+	body:not(.search-results) .entry-summary li > ol,
+	body:not(.search-results) .entry-summary blockquote > ol {
 		margin-right: 1.52173913em;
 		margin-left: auto;
 	}
